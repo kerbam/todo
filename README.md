@@ -1,2 +1,2 @@
 # todo
-Todo app
+First pass at a todo app. 
