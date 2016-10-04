@@ -5,12 +5,14 @@
 		<meta charset="utf-8">
 		<title>todo manchu</title>
 		<link rel="stylesheet" href="index.css">
+        <script type="text/javascript" src="app.js"></script>
 	</head>
 	<body>
 		<section class="todoapp">
 			<header class="header">
 				<h1>todo manchu</h1>
-				<input class="new-todo" placeholder="What needs to be done?" autofocus>
+				<input type="text" class="new-todo" placeholder="What needs to be done?" 
+                    autofocus onkeydown="addTodo()">
 			</header>
 	</body>
 </html>
