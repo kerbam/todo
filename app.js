@@ -20,14 +20,19 @@ function addTodo() {
     // null / empty not allowed
     todos.push(todoText);
     console.log('current list', todos);
-    
+
     // append the content
         // build some DOM fragment = element
         // example: <div><label>todoText</label></div>
-        
+        var newLineItem = document.createElement('li');
+        console.log(currentTodoList);
         // append it to the todo container
         // get the element (todo container) by id or class
-        // 
+        //
+        newLineItem.appendChild(document.createTextNode(todoText));
+        var currentTodoList = document.getElementsByClassName("list")[0];
+        currentTodoList.insertBefore(newLineItem, currentTodoList.childNodes[0]);
+        document.getElementById("new-todo").value = "";
 }
 
 
@@ -38,8 +43,8 @@ function addTodo() {
 
 
 // ----------------------------------------------
-// advanced functionality 
+// advanced functionality
 
-// filtering the data model 
+// filtering the data model
 
 // active items remaining count
